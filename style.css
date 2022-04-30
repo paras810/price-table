@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&family=Ubuntu&display=swap');
+
+/* font-family: 'Roboto Mono', monospace;
+font-family: 'Ubuntu', sans-serif; */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+    transition: all .4s linear;
+}
+html{
+    font-size: 10px;
+}
+body{
+    letter-spacing: 1.2px;
+}
+
+:root {
+    --border-color: #ada3a3b0;
+}
+
+.heading {
+    text-align: center;
+    margin: 1.5rem 0;
+    font-size: 3rem;
+}
+
+.about-membership {
+    text-align: center;
+    width: 47vw;
+    margin: auto;
+    font-size: 1.6rem;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: center;
+    align-items: center;
+    margin: 1rem 2rem;
+    text-align: center;
+    width: 80vw;
+    margin: 2rem auto;
+    font-weight: 300;
+    color: #545151;
+    font-size: 1.6rem;
+    height: auto;
+}
+
+.container>:nth-child(33),
+.container>:nth-child(34),
+.container>:nth-child(35),
+.container>:nth-child(36) {
+    border-bottom: 2px solid var(--border-color);
+}
+
+.container>:nth-child(4),
+.container>:nth-child(8),
+.container>:nth-child(12),
+.container>:nth-child(16),
+.container>:nth-child(20),
+.container>:nth-child(24),
+.container>:nth-child(28),
+.container>:nth-child(32),
+.container>:nth-child(36) {
+    border-right: 2px solid var(--border-color);
+}
+
+.item {
+    /* background-color: chocolate; */
+    border: 2px solid var(--border-color);
+    border-bottom: none;
+    border-right: none;
+    width: auto;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.bg-light {
+    background-color: #bdb9b978;
+    font-weight: 900;
+}
+.text-dark{
+    font-weight: 900;
+    text-align: start;
+}
+.package-box{
+    height: 12vh;
+}
+.about-package{
+    display: flex;
+    font-weight: 300;
+    margin-top: 0.3rem;
+}
+
+.btn {
+    background-color: #e7516c;
+    color: white;
+    border: none;
+    padding: 0.5rem 1.6rem;
+    cursor: pointer;
+    border: 1px solid #e7516c;
+    font-size: 1.6rem;
+}
+
+.btn:hover {
+    background: white;
+    color: #e7516c;
+}
+
+@media screen and (max-width:1200px) {
+    .btn{
+        font-size: 1.3rem;
+    }
+    .about-package {
+        display: none;
+    }
+    
+}
+@media screen and (max-width:700px) {
+    html{
+        font-size: 52.5%;
+    }
+    .container {
+        grid-template-columns: repeat(4, 11rem);
+        width: 100vw;
+        margin: 0 1px;
+        font-size: 1.6rem;
+        height: auto;
+        margin: 3rem 0;
+    }
+    .btn{
+        padding: 0.5rem 0.7rem;
+        margin: 37px;
+    }
+    .about-package {
+        display: none;
+    }
+    .about-membership {
+        width: 72vw;
+    }
+    .heading {
+        margin: 3.5rem 0;
+    }
+    
+}
+
+@media screen and (max-width:400px) {
+    .container {
+        grid-template-columns: repeat(4, 10rem);
+        width: 77vw;
+        margin: 0 1px;
+        font-size: 1.4rem;
+        height: auto;
+        margin: 3rem auto;
+    }
+}
+@media screen and (max-width:300px) {
+    .container {
+        grid-template-columns: repeat(4, 8rem);
+        /* width: 7vw; */
+        /* margin: 0 1px; */
+        font-size: 1rem;
+        height: auto;
+        margin: 3rem auto;
+    }
+}
